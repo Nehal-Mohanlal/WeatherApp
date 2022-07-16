@@ -5,15 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather app</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <%- include("./partials/header.ejs")  %> 
 </head>
 <body>
 
-    <form action="/" method="post">
-        <label>City Name</label>
-        <input type="text" name="CN" id="cityName" > 
-        <button type="submit">Enter</button>
-    </form>
+    <div class="weatherPic">
+        <img src="/images/images.png">
+    </div>
+    <div class="inputWeather">
+        <form action="/" method="post">
+            <label>City Name</label>
+            <input class="input" type="text" name="CN" id="cityName" > 
+            <button class="" type="submit" id="btnsubmit">Enter</button>
+        </form>
+    </div>
+    
 
-  
+    <%- include("./partials/footer.ejs")  %> 
 </body>
 </html>

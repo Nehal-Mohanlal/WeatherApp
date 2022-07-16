@@ -16,6 +16,9 @@ const port = 3010
 app.set("view engine", "ejs")
 // middle ware so we can use app.post with forms 
 app.use(express.urlencoded({extended:true}))
+//so we can use css and other static files
+app.use(express.static("public"))
+
 
 // all tempdata will be stored here as objects
 let tempData = []
